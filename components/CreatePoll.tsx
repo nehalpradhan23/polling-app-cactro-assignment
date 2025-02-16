@@ -7,12 +7,7 @@ import { Input } from "@/components/ui/input";
 import { toast } from "react-toastify";
 import useFetchPolls from "@/hooks/useFetchPolls";
 
-interface CreatePollFormProps {
-  onPollCreated: () => void;
-}
-
 export default function CreatePoll() {
-  // export default function CreatePoll({ onPollCreated }: CreatePollFormProps) {
   const [newQuestion, setNewQuestion] = useState("");
   const [newOptions, setNewOptions] = useState(["", ""]); // options initially 2
 
