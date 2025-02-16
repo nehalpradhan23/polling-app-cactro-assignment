@@ -19,10 +19,12 @@ const useFetchPolls = () => {
       const response = await fetch("/api/polls");
       const data = await response.json();
 
+      console.log("asdfasf ", data);
+
       if (data.success) {
         setPolls(data.polls);
       } else {
-        console.log("error fetching polls", data.error);
+        console.log("error fetching polls");
         toast.error("Error fetching polls");
       }
     } catch (error) {
