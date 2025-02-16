@@ -57,7 +57,6 @@ export async function GET() {
       {
         success: false,
         error: "Failed to fetch polls",
-        details: error.message,
       },
       { status: 500 }
     );
